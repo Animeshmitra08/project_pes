@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PesCrushCommunity</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" />
+    </head>
+    <body>
+        <section id="first" class="sub">
+            <div class="toggle"></div>
+            <div class="headings">
+                <span class="vertical-line"></span>
+                <span class="horizontal-line"></span>
+                <li class="a"><span>Wellcome to</span></li>
+                <li class="b"><span>Pes Championship Season 01</span></li>
+                <li class="c"><span>Play together and have fun together</span></li>
+            </div>
+            <div class="nav-bar">
+                <img src="images/logo.jpeg" class="logo" />
+                <ul>
+                    <li class="active"><a  href="index.html">Home</a></li>
+                    <li><a href="#Knowus">Know Us</a></li>
+                    <li><a href="#contacts">Contact</a></li>                    
+                    <li><a href="#sub">Result</a><i id="drop" class="fas fa-caret-down"></i>
+                        <div id="sub" class="sub-menu">
+                            <ul>
+                                <li><a href="pointstable.html">Points Table</a></li>
+                                <li><a href="matches.html">Matches</a></li>
+                                <li><a href="stats.html">Stats</a></li>
+                                <li><a href="players.html">Players</a></li>
+                            </ul>
+                        </div>                  
+                    </li>                    
+                </ul>
+            </div>
+        </section>
+
+        <section id="Knowus" class="About">
+            <div class="container">
+                <div class="content-section">
+                    <div class="title">
+                        <h1>Know Us</h1>
+                    </div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam illum quia quibusdam facilis quo, ad odio doloribus unde vero ea ipsam aliquam. Animi sed possimus labore numquam eaque expedita vitae sapiente, magni voluptatum quam obcaecati iusto in consequatur exercitationem suscipit unde. Et maiores nam ducimus rerum, quasi illo iure ad.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi tempore dignissimos quidem fugiat dolorum fuga cum accusamus doloribus sequi, doloremque sunt expedita, pariatur hic quis! Iure eveniet perspiciatis magnam officiis.</p>
+                        <div class="button">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="img-section">
+                    <img src="images/aboutus.jpeg">
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="cont">
+            <div class="bgimg">                
+            </div>
+            <div class="contact-sec">
+                <div class="contactinfo">
+                    <div><i class="fas fa-map-marker"></i>Baigachi More, Santipur, Nadia, India</div>
+                    <div><i class="fas fa-envelope"></i>animeshmitra003@gmail.com</div>
+                    <div><i class="fas fa-phone"></i>+91 1234567890</div>
+                    <div><i class="fas fa-clock"></i>Always open</div>
+                </div>
+                <div class="contactform">
+                    <h2>Contact Us</h2>
+                    <form class="con" name="contact" data-netlify="true" method="POST">
+                        <input type="text" name="name" class="textbox" placeholder="Your Name" required>
+                        <input type="text" name="email" class="textbox" placeholder="Your Email" required>
+                        <textarea name="name" rows="8" placeholder="Your Message" required></textarea>
+                        <input type="submit" name="submit" class="sndbtn" value="send">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="social" class="soc">
+            <div class="Copywrite">
+                <h1>Copywrite &copy;2021 PesCrushCommunity|All Right Reserved. Designed by <span>Animesh</span></h1>
+            </div>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/PescrushYT/"><i id="facebook" class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/pes_crush_community?igshid=1xs0sx86u8d5j"><i id="instagram" class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/channel/UCPlPbMtHIXKCu24LjUtowMA"><i id="youtube" class="fab fa-youtube"></i></a>
+              </div>
+        </section>
+
+        <script>
+            const sub = document.querySelector('.sub');
+            const about = document.querySelector('.About');
+            const cont = document.querySelector('.cont');
+            const soc = document.querySelector('.soc');
+            const toggle = document.querySelector('.toggle');
+            toggle.onclick= function(){
+                sub.classList.toggle('dark');
+                about.classList.toggle('dark');
+                cont.classList.toggle('dark');
+                soc.classList.toggle('dark');
+                toggle.classList.toggle('dark');
+            }
+        </script>
+
+    </body>
+</html>

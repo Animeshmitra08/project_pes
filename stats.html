@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result: Statistics</title>
+        <link rel="stylesheet" href="stats.css">
+        <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" />
+    </head>
+    <body>
+        <section id="first" class="sub">
+            <div class="toggle"></div>
+            <div class="nav-bar">
+                <img src="images/logo.jpeg" class="logo" />
+                <ul>
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="index.html#Knowus">Know Us</a></li>
+                    <li><a href="index.html#contacts">Contact</a></li>
+                    <li><a href="#sub">Result</a><i id="drop" class="fas fa-caret-down"></i>
+                        <div id="sub" class="sub-menu">
+                            <ul>
+                                <li><a href="pointstable.html">Points Table</a></li>
+                                <li><a href="matches.html">Matches</a></li>
+                                <li><a class="active2" href="stats.html">Stats</a></li>
+                                <li><a href="players.html">Players</a></li>
+                            </ul>
+                        </div>                        
+                    </li>
+                    <li class="active"><a>Stats</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="social" class="soc">
+            <div class="Copywrite">
+                <h1>Copywrite &copy;2021 PesCrushCommunity|All Right Reserved. Designed by <span>Animesh</span></h1>
+            </div>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/PescrushYT/"><i id="facebook" class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/pes_crush_community?igshid=1xs0sx86u8d5j"><i id="instagram" class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/channel/UCPlPbMtHIXKCu24LjUtowMA"><i id="youtube" class="fab fa-youtube"></i></a>
+              </div>
+        </section>
+
+        <script>
+            const sub = document.querySelector('.sub');
+            const soc = document.querySelector('.soc');
+            const toggle = document.querySelector('.toggle');
+            toggle.onclick= function(){
+                sub.classList.toggle('dark');
+                soc.classList.toggle('dark');
+                toggle.classList.toggle('dark');
+            }
+        </script>
+
+    </body>
+</html>
